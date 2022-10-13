@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+int average, chem, phy, percentage, eng, bio, mat, total;
+char nm[50], fnm[50];
+
+cout<<"\t\t\t\t\t\t"<<"Results 2023\n";
+
+	cout<<"Enter your name\n";
+	cin>>nm;
+    
+	cout<<"Enter your fathers name\n";
+	cin>>fnm;
+
+	cout<<"Enter your marks in MATHS\n";
+	cin>>mat;
+	
+	cout<<"Enter your marks in ENGLISH\n";
+	cin>>eng;
+	
+	cout<<"Enter your marks in BIOLOGY\n";
+	cin>>bio;
+	
+	cout<<"Enter your marks in PHYSICS\n";
+	cin>>phy;
+	
+	cout<<"Enter your marks in CHEMISTRY\n";
+	cin>>chem;
+	
+	cout<<"\t\t\t\t"<<"REPORT CARD\n\n";
+	
+	cout<<"SUNJECTS"<<"\t\t\t"<<"marks obtained\n\n";
+	
+	cout<<"MATHS"<<"\t\t\t\t"<<mat<<"\n";
+	
+	cout<<"PHYSICS"<<"\t\t\t\t"<<phy<<"\n";
+	
+	cout<<"CHEMISTRY"<<"\t\t\t"<<chem<<"\n";
+	
+	cout<<"ENGLISH"<<"\t\t\t\t"<<eng<<"\n";
+	
+	cout<<"BIOLOGY"<<"\t\t\t\t"<<bio<<"\n\n";
+
+	total = chem + phy + eng + bio + mat;
+	cout<<"Total marks"<<"\t"<<total<<"\t";
+	
+	percentage = total / 500 * 100;
+	cout<<"Percentagge"<<"\t"<<percentage<<"\t";
+     
+	cout<<"Average"<<"\t"<<average;
+	average = total / 5;
+	cout<<"\n\n";
+	
+	if(total=300){cout<<"\t\t\t"<<"Congratulations you have passed the exam";
+	}
+	return 0;
+}
